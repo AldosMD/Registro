@@ -26,13 +26,16 @@ formulario.addEventListener(
             errorNombre.textContent= "";
         }
 
+        // Este se pone solo una sola ves
+    //---------------------------------------------
         if(edad === ""){
             errorAge.textContent = "La edad es obligatoria"
             valido = false;
         }else{
             errorAge.textContent= "";
         }
-    
+    //---------------------------------------------
+
         if(email === ""){
             errorEmail.textContent = "El email es obligatorio"
             valido = false;
