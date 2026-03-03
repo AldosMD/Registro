@@ -26,18 +26,13 @@ formulario.addEventListener(
             errorNombre.textContent= "";
         }
 
-       
-
-
         if(edad === ""){
             errorAge.textContent = "La edad es obligatoria"
             valido = false;
         }else{
             errorAge.textContent= "";
         }
-
     
-
         if(email === ""){
             errorEmail.textContent = "El email es obligatorio"
             valido = false;
@@ -45,21 +40,11 @@ formulario.addEventListener(
             errorEmail.textContent= "";
         }
 
-       
         if(telefono === ""){
             errorPhone.textContent = "El nombre es obligatorio"
             valido = false;
         }else{
             errorPhone.textContent= "";
         }
-
-        if(valido){
-            mensaje.textContent = "Registro correcto";
-        }else{
-            mensaje.textContent ="";
-        }
-
-        
-
     }
 );
