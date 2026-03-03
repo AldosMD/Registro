@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1>Registro para la carrera de 5km</h1>
-    <form action="" method="post">
+    <form id="formulario" method="post">
+
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo">
+        <span id="errorName" class="error"></span>
 
         <label for="age">Edad</label>
     <input type="number" min="18" max="45" id="age" name="age" placeholder="Ingresa tu edad">
+    <span id="errorAge" class="error"></span>
 
     <label for="size">Talla de playera</label>
+    <span id="errorSize" class="error"></span>
     <select name="size" id="size">
         <option value="xs">Extra chica</option>
         <option value="s">Chica</option>
@@ -26,11 +30,17 @@
 
     <label for="email">Correo electronico</label>
     <input type="email" id="email" name="email" pattern="/[a-z0-9]*@[a-z0-9]*\[a-z0-9]*/gm" placeholder="Ingresa tu correo">
+    <span id="errorEmail" class="error"></span>
 
     <label for="phone">Telefono</label>
     <input type="phone" id="phone" name="phone" placeholder="Ingresa tu numero de telefono">
+    <span id="errorPhone" class="error"></span>
 
     <button type="submit">Enviar Registro</button>
     <button type="reset">Limpiar Formulario</button>
+    <script src="js/validator.js"></script>
+    </form>
+    <p id="message" class="success"></p>
+
 </body>
 </html>

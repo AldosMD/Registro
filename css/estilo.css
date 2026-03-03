@@ -1,8 +1,14 @@
 body {
     background-color: #e2c782;
     font-family: Arial, Helvetica, sans-serif;
-    matgin: 40px;
+    margin: 40px;
 }
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
 input{
     display: block;
     margin-bottom: 10px;
@@ -25,4 +31,13 @@ select{
     para que la cuagricula del formulario tenga todo el largo de la pagina */
     width: 100%;
     box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+.succes{
+    color: green;
+    font-weight: bold;
 }
